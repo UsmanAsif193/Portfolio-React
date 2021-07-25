@@ -1,9 +1,29 @@
 import React from 'react'
+import './Web.css'
 
 function Web() {
     return (
-        <div>
-            This is Web
+        <div className='web'>
+            <div className='web-option'>
+                <a href="#Project">
+                    <i class="fi-rr-edit-alt option-icon"></i>Projects
+                </a>
+            </div>
+            <div className='web-option'>
+                <a href="#Skills">
+                    <i class="fi-rr-laptop option-icon"></i>Skills
+                </a>
+            </div>
+            <div className='web-option'>
+                <a href="#Work">
+                    <i class="fi-rr-briefcase option-icon"></i>Work
+                </a>
+            </div>
+            <div className='web-option'>
+                <a href="#Contact">
+                    <i class="fi-rr-user option-icon"></i>Contact
+                </a>
+            </div>
         </div>
     )
 }
