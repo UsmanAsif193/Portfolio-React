@@ -1,34 +1,34 @@
 export const SkillsData = [
     {
-        type: Frontend,
+        type: "Frontend",
         list: [
             {
-                name: ReactJs,
+                name: "ReactJs",
                 icon: <i class="devicon-react-original colored"></i>,
             },
             {
-                name: NextJs,
+                name: "NextJs",
                 icon: <i class="devicon-nextjs-original colored"></i>,
             },
             {
-                name: JavaScript,
+                name: "JavaScript",
                 icon: <i class="devicon-javascript-plain colored"></i>,
             },
             {
-                name: TypeScript,
+                name: "TypeScript",
                 icon: <i class="devicon-typescript-plain colored"></i>,
             },
         ],
     },
     {
-        type: Backend,
+        type: "Backend",
         list: [
             {
-                name: NodeJs,
+                name: "NodeJs",
                 icon: <i class="devicon-nodejs-plain colored"></i>,
             },
             {
-                name: GraphQl,
+                name: "GraphQl",
                 icon: <i class="devicon-graphql-plain colored"></i>,
             },
         ],
