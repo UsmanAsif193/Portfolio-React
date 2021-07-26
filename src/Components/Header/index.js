@@ -9,7 +9,7 @@ function Header() {
         <div className='header'>
             <div className="logo">Usman Asif</div>
             <div className="menu">
-                <div className="web-men"><Web /></div>
+                <div className="web-menu"><Web /></div>
                 <div className="mobile-menu">
                     <div onClick={() => { setIsOpen(!isOpen) }}>
                         <i class="fi-rr-apps menu-icon"></i>
