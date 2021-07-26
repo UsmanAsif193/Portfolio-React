@@ -1,6 +1,7 @@
 import React from 'react';
 import './About.css';
 import aboutCoding from '../../../assets/coding2.jpg';
+import SocailContact from '../../Common/Social-Contact'
 
 function About() {
     return (
@@ -19,7 +20,7 @@ function About() {
                 </div>
             </div>
             <div className="about-bottom">
-                This is Contacts
+                <SocailContact />
             </div>
         </div>
     )
