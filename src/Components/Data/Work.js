@@ -1,18 +1,18 @@
 export const WorkData = [
     {
-        company: 'Random Company 1',
-        designation: "Skill Name",
-        dateJoining: "02-02-4120",
+        company: 'Fiverr',
+        designation: "Freelance Front-End Developer",
+        dateJoining: "March 2021",
         dateEnd: "Present",
-        companyLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1200px-Google_%22G%22_Logo.svg.png",
-        work: "Worken on Unit testing and creating the largest database efficiently. With over 100 people under me, made it work really well."
+        companyLogo: require("../../assets/icon/fiverr.png").default,
+        work: "I am working as a Front-End Developer on fiverr for quite a time on fiverr. I am giving my services as Front-End developer using ReactJS and JavaScript."
     },
     {
-        company: 'Random Company 2',
-        designation: "Skill Name",
-        dateJoining: "02-02-4120",
+        company: 'Upwork',
+        designation: "Freelance Front-End Developer",
+        dateJoining: "December 2020",
         dateEnd: "Present",
-        companyLogo: "https://iconape.com/wp-content/png_logo_vector/facebook-f-logo-2019.png",
-        work: "Worken on Unit testing and creating the largest database efficiently. With over 100 people under me, made it work really well."
+        companyLogo: require("../../assets/icon/upwork.png").default,
+        work: "Upwork is a platform for professionals and I am quite new to this platform. I am giving my services as ReactJS developer and Front-End Developer on upwork."
     },
 ]

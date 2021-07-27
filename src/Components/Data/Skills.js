@@ -18,6 +18,10 @@ export const SkillsData = [
                 name: "TypeScript",
                 icon: <i class="devicon-typescript-plain colored"></i>,
             },
+            {
+                name: "HTML5",
+                icon: <i class="devicon-html5-plain colored"></i>
+            }
         ],
     },
     {
