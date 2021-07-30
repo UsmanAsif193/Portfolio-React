@@ -2,6 +2,7 @@ import React from 'react'
 import Seperator from '../../Common/Seperator'
 import './Contact.css'
 import SocailContact from '../../Common/Social-Contact/index'
+import Resume from '../../../assets/Resume-Usman.pdf'
 
 function Contact() {
     return (
@@ -14,7 +15,7 @@ function Contact() {
                     <SocailContact />
                 </div>
                 <div className="download">
-                    <a href="#"><i class="fi-rr-cloud-download download-icon"></i>Download Resume</a>
+                    <a downlaod href={Resume}><i class="fi-rr-cloud-download download-icon"></i>Download Resume</a>
                 </div>
             </div>
         </div>
