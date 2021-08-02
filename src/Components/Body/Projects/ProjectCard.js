@@ -8,13 +8,13 @@ function ProjectCard({ project }) {
                 <label className="project-title">{project.title}</label>
                 <div className="project-links">
                     {project.demo &&
-                        <a href={project.demo} className="project-link">
+                        <a target="_blank" rel="noopener noreferrer" href={project.demo} className="project-link">
                             <div className="link-button">
                                 <i class="fi-rr-globe"></i>Demo
                             </div>
                         </a>}
                     {project.github &&
-                        <a href={project.github} className="project-link">
+                        <a target="_blank" rel="noopener noreferrer" href={project.github} className="project-link">
                             <div className="link-button">
                                 <i class="devicon-github-original colored"></i>Github
                             </div>
