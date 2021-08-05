@@ -26,4 +26,13 @@ export const ProjectData = [
         github: 'https://github.com/UsmanAsif193/TicTacToe-React',
         image: require('../../assets/Project3.png').default
     },
+    {
+        id: 4,
+        title: 'Expense Tracker App',
+        about: 'I created this Expense Tracker App usig ReactJS. This is a simple react app, it stores the data and shows us in the history. We can also remove the data from history, by removing the data it also deducts the total income/expense. ',
+        tags: ['ReactJs', 'NodeJs', 'MERN Stack'],
+        demo: 'https://expense-trackerbyusman.surge.sh/',
+        github: 'https://github.com/UsmanAsif193/practice-expense-tracker-react',
+        image: require('../../assets/Project1.png').default
+    },
 ]

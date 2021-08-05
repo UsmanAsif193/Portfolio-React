@@ -32,6 +32,10 @@
 }
 
 
+.button-hidden{
+  display:none
+}
+
 @media only screen and (max-width:600px) {
   .gradient-button{
     width: 35%;
