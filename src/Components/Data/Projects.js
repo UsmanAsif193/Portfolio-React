@@ -28,11 +28,11 @@ export const ProjectData = [
     },
     {
         id: 4,
-        title: 'Expense Tracker App',
-        about: 'I created this Expense Tracker App usig ReactJS. This is a simple react app, it stores the data and shows us in the history. We can also remove the data from history, by removing the data it also deducts the total income/expense. ',
+        title: 'CryptoCurrency Tracker',
+        about: 'CryptoCurrency tracker is a simple web app made using Web Api and ReactJs. This is a simple react app, it shows the latest data and shows us many main sections of cryptocurrency. We can also search the cryptocurrency from the search bar. ',
         tags: ['ReactJs', 'NodeJs', 'MERN Stack'],
-        demo: 'https://expense-trackerbyusman.surge.sh/',
-        github: 'https://github.com/UsmanAsif193/practice-expense-tracker-react',
-        image: require('../../assets/Project1.png').default
+        demo: 'https://cryptotracker-usman.surge.sh/',
+        github: 'https://github.com/UsmanAsif193/Cryptocurrency-Tracker-React',
+        image: require('../../assets/Project4.png').default
     },
 ]

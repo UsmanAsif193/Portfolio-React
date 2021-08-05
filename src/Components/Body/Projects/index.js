@@ -17,8 +17,6 @@ function Projects() {
         setloadMore(projects.length)
         setbuttondisable(true)
     }
-    console.log(projects.length)
-    console.log(loadMore)
 
     return (
         <div className='projects'>
