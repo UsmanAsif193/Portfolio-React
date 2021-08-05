@@ -25,15 +25,9 @@ jobs:
       - name: Setup Node.js environment
         run: npm install
 
-        # Install npm packages
-      - name: NPM or Yarn install with caching
-  # You may pin to the exact commit or the version.
-  # uses: bahmutov/npm-install@44b9e76df0949f3df6616b334af42e055ce24831
-        uses: bahmutov/npm-install@v1.6.0
-
         # Build react app
       - name: Build Yarn and npm
-        run: yarn build
+        run: npm run build
 
         # Install Surge 
       - name: Install Surge
