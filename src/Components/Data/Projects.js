@@ -13,7 +13,7 @@ export const ProjectData = [
         title: 'Portfolio Website',
         about: 'It is a simple Portfolio website made on ReactJS and CSS3. It contains different sections and each section contains different parts. It covers my education, experience, portfolio and many more.',
         tags: ['ReactJS', 'CSS3', 'Full Stack'],
-        demo: 'https://reactportfolio-usman.surge.sh/',
+        demo: 'https://usmanasif.surge.sh/',
         github: 'https://github.com/UsmanAsif193/React-Portfolio',
         image: require('../../assets/Project2.png').default
     },
