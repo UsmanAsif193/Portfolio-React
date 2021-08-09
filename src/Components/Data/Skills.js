@@ -4,23 +4,23 @@ export const SkillsData = [
         list: [
             {
                 name: "ReactJs",
-                icon: <i class="devicon-react-original colored"></i>,
+                icon: <i className="devicon-react-original colored"></i>,
             },
             {
                 name: "NextJs",
-                icon: <i class="devicon-nextjs-original colored"></i>,
+                icon: <i className="devicon-nextjs-original colored"></i>,
             },
             {
                 name: "JavaScript",
-                icon: <i class="devicon-javascript-plain colored"></i>,
+                icon: <i className="devicon-javascript-plain colored"></i>,
             },
             {
                 name: "TypeScript",
-                icon: <i class="devicon-typescript-plain colored"></i>,
+                icon: <i className="devicon-typescript-plain colored"></i>,
             },
             {
                 name: "HTML5",
-                icon: <i class="devicon-html5-plain colored"></i>
+                icon: <i className="devicon-html5-plain colored"></i>
             }
         ],
     },
@@ -29,11 +29,11 @@ export const SkillsData = [
         list: [
             {
                 name: "NodeJs",
-                icon: <i class="devicon-nodejs-plain colored"></i>,
+                icon: <i className="devicon-nodejs-plain colored"></i>,
             },
             {
                 name: "GraphQl",
-                icon: <i class="devicon-graphql-plain colored"></i>,
+                icon: <i className="devicon-graphql-plain colored"></i>,
             },
         ],
     },

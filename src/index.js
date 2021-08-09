@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import DarkMode from './Context/DarkMode';
 
 ReactDOM.render(
-  <App />,
+  <DarkMode>
+    <App />
+  </DarkMode>,
   document.getElementById('root')
 );
