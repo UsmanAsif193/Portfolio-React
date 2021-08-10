@@ -1,10 +1,12 @@
 import React from 'react'
-import { useDarkMode } from '../../../Context/DarkMode'
+import { useDarkMode, useSetDarkMode } from '../../../Context/DarkMode'
 import './Web.css'
 
 function Web() {
 
-    const { darkMode, setdarkMode } = useDarkMode()
+    const darkMode = useDarkMode()
+    const setdarkMode = useSetDarkMode()
+
     function handleClick() {
         setdarkMode(!darkMode)
     }
@@ -31,7 +33,7 @@ function Web() {
                     <i className="fi-rr-user option-icon"></i>Contact
                 </a>
             </div>
-            <div className='web-option' onClick={handleClick} >
+            <div className='web-option' onClick={handleClick} style={{ cursor: 'pointer' }}>
                 Dark Mode
             </div>
         </div>

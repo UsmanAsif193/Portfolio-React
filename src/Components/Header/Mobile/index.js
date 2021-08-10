@@ -1,13 +1,16 @@
 import React from 'react'
-import { useDarkMode } from '../../../Context/DarkMode'
+import { useDarkMode, useSetDarkMode } from '../../../Context/DarkMode'
 import './Mobile.css'
 
 
 function Mobile({ isOpen, setIsOpen }) {
 
-    const { darkMode, setdarkMode } = useDarkMode()
+    const darkMode = useDarkMode()
+    const setdarkMode = useSetDarkMode()
 
-    console.log(darkMode)
+    function handleClick() {
+        setdarkMode(!darkMode)
+    }
 
     return (
         <div className='mobile'>
@@ -35,7 +38,7 @@ function Mobile({ isOpen, setIsOpen }) {
                         <i className="fi-rr-user option-icon"></i>Contact
                     </a>
                 </div>
-                <div className='mobile-option' onClick={() => { setdarkMode(!darkMode) }}>
+                <div className='mobile-option' onClick={handleClick}>
                     Dark Mode
                 </div>
             </div>
