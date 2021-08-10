@@ -24,9 +24,7 @@ function Projects() {
             <label className='section-title'>Projects</label>
             {projects.slice(0, loadMore).map((project) => {
                 return (
-                    <>
-                        <ProjectCard project={project} />
-                    </>
+                    <ProjectCard project={project} key={project.title} />
                 )
             })}
             <GradientButton

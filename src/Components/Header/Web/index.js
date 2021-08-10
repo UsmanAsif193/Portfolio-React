@@ -31,7 +31,7 @@ function Web() {
                     <i className="fi-rr-user option-icon"></i>Contact
                 </a>
             </div>
-            <div className='web-option' onChange={handleClick} >
+            <div className='web-option' onClick={handleClick} >
                 Dark Mode
             </div>
         </div>
