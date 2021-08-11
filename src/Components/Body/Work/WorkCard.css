@@ -22,6 +22,10 @@
     color: gray;
 }
 
+.dark-work-date{
+    color: lightgray;
+}
+
 .work-desc{
     text-align: left;
     max-width: 80%;

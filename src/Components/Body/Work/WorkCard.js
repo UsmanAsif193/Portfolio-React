@@ -1,13 +1,15 @@
 import React from 'react'
+import { useDarkMode } from '../../../Context/DarkMode'
 import "./WorkCard.css"
 
 function WorkCard({ item }) {
+    const darkMode = useDarkMode()
     return (
         <div className="work-card">
             <img src={item.companyLogo} alt={item.company} className="work-logo" />
             <div className="work-info">
                 <label className="company-name">{item.company}</label>
-                <div className="work-dates">
+                <div className={darkMode ? "work-dates dark-work-date" : "work-dates"}>
                     <label>{item.dateJoining}</label>-<label>{item.dateEnd}</label>
                 </div>
                 <div className="work-desc">
