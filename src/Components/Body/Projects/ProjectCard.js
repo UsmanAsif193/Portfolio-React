@@ -1,7 +1,10 @@
 import React from 'react'
 import './ProjectCard.css'
+import { useDarkMode } from '../../../Context/DarkMode'
 
 function ProjectCard({ project }) {
+    const darkMode = useDarkMode()
+    console.log(darkMode)
     return (
         <div className='project-card'>
             <div className="project-info">
@@ -24,7 +27,7 @@ function ProjectCard({ project }) {
                 <div className="project-tags">
                     {project.tags.map((tag) => {
                         return (
-                            <label className="tag" key={tag}>{tag}</label>
+                            <label key={tag} className={darkMode ? 'tag darktag' : 'tag'}>{tag}</label>
                         )
                     })}
                 </div>
