@@ -12,7 +12,7 @@ function About() {
             <div className="about-top">
                 <div className="about-info">
                     Hello There 👋, I am
-                    <br /><span className='info-name'>Usman Asif</span>.
+                    <br /><span className={darkMode ? 'info-name dark-info-name' : 'info-name'}>Usman Asif</span>.
                     <br />I am an expert of ReactJS.
                 </div>
                 <div className="about-photo">

@@ -13,7 +13,7 @@ function Mobile({ isOpen, setIsOpen }) {
     }
 
     return (
-        <div className='mobile'>
+        <div className={darkMode ? 'mobile dark-mobile' : 'mobile'}>
             <div className="close-icon" onClick={() => { setIsOpen(!isOpen) }}>
                 <i className="fi-rr-cross-circle"></i>
             </div>
