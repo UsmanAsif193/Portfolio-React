@@ -4,7 +4,6 @@ import { useDarkMode } from '../../../Context/DarkMode'
 
 function ProjectCard({ project }) {
     const darkMode = useDarkMode()
-    console.log(darkMode)
     return (
         <div className='project-card'>
             <div className="project-info">

@@ -12,7 +12,7 @@ function Web() {
     }
 
     return (
-        <div className='web' className={darkMode ? 'web dark-web-options' : 'web'}>
+        <div className={darkMode ? 'web dark-web-options' : 'web'}>
             <div className='web-option'>
                 <a href="#Projects">
                     <i className="fi-rr-edit-alt option-icon"></i>Projects
