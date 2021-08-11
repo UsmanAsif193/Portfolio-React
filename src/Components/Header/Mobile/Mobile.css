@@ -37,3 +37,8 @@
     color: black;
     display: flex;
 }
+
+
+.dark-mob-options a{
+    color: white;
+}
