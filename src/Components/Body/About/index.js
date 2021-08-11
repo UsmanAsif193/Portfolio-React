@@ -1,9 +1,12 @@
 import React from 'react';
 import './About.css';
-import aboutCoding from '../../../assets/coding2.jpg';
+import aboutCodingLight from '../../../assets/coding-light.png';
+import aboutCodingDark from '../../../assets/coding-dark.png';
 import SocailContact from '../../Common/Social-Contact'
+import { useDarkMode } from '../../../Context/DarkMode';
 
 function About() {
+    const darkMode = useDarkMode()
     return (
         <div className='about'>
             <div className="about-top">
@@ -14,7 +17,7 @@ function About() {
                 </div>
                 <div className="about-photo">
                     <img
-                        src={aboutCoding}
+                        src={darkMode ? aboutCodingDark : aboutCodingLight}
                         alt="About-Coding"
                         className='about-picture' />
                 </div>
