@@ -1,13 +1,15 @@
 import React from 'react'
 import Loader from "react-loader-spinner";
+import { useDarkMode } from '../../../Context/DarkMode';
 import './AppLoader.css'
 
 
 const AppLoader = () => {
+    const darkMode = useDarkMode()
     return (
         <div>
             <div className="loader">
-                <div className="loader-text">Loading</div>
+                <div className={darkMode ? "loader-text dark-loader-text" : "loader-text"}>Loading</div>
                 <Loader
                     className="loader-dots"
                     type="ThreeDots"
