@@ -34,7 +34,7 @@ function Web() {
                 </a>
             </div>
             <div className='web-option' onClick={handleClick} style={{ cursor: 'pointer' }}>
-                {darkMode ? "Dark" : "Light"} Mode
+                {darkMode ? "Light" : "Dark"} Mode
             </div>
         </div>
     )

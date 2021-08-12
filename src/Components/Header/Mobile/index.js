@@ -39,7 +39,7 @@ function Mobile({ isOpen, setIsOpen }) {
                     </a>
                 </div>
                 <div className='mobile-option' onClick={handleClick}>
-                    {darkMode ? "Dark" : "Light"} Mode
+                    {darkMode ? "Light" : "Dark"} Mode
                 </div>
             </div>
         </div>
