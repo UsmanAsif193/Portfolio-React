@@ -35,7 +35,8 @@
 }
 
 .darktag{
-    color: black;
+    color: white;
+    background-color: #2a5c9e;
 }
 
 .project-links{
@@ -59,6 +60,12 @@
     font-size: 16px;
     margin-right: 6px;
 }
+
+.dark-link-button{
+    color: white;
+    background-color: #2a5c9e;
+}
+
 
 .link-button i{
     display: flex;

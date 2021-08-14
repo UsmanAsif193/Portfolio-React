@@ -11,14 +11,14 @@ function ProjectCard({ project }) {
                 <div className="project-links">
                     {project.demo &&
                         <a target="_blank" rel="noopener noreferrer" href={project.demo} className="project-link">
-                            <div className="link-button">
+                            <div className={darkMode ? "link-button dark-link-button" : "link-button"}>
                                 <i className="fi-rr-globe"></i>Demo
                             </div>
                         </a>}
                     {project.github &&
                         <a target="_blank" rel="noopener noreferrer" href={project.github} className="project-link">
-                            <div className="link-button">
-                                <i className="devicon-github-original colored"></i>Github
+                            <div className={darkMode ? "link-button dark-link-button" : "link-button"}>
+                                <i className="devicon-github-original"></i>Github
                             </div>
                         </a>}
                 </div>
