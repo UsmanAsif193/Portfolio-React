@@ -9,7 +9,7 @@ export const useDarkMode = () => { return useContext(DarkModeContext) }
 export const useSetDarkMode = () => { return useContext(SetDarkModeContext) }
 
 const DarkMode = ({ children }) => {
-    const [darkMode, setdarkMode] = useState(localStorage.getItem("theme") === "dark" ? true : false)
+    const [darkMode, setdarkMode] = useState(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? true : false)
     return (
         <DarkModeContext.Provider value={darkMode}>
             <SetDarkModeContext.Provider value={setdarkMode}>
