@@ -33,6 +33,14 @@ div.download a{
     color: black;
 }
 
+.dark-download{
+    background-color: #2a5c9e;
+}
+
+div.dark-download a{
+    color: white;
+}
+
 @media only screen and (max-width: 720px){
     .contact-container{
         flex-direction: column;
