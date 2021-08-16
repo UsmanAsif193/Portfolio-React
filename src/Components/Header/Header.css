@@ -28,12 +28,12 @@
 .logo{
     display:flex;
     font-size: 36px;
-    color: blueviolet;
+    color: royalblue;
     font-weight: 800;
 }
 
 .dark-logo {
-    color: rgb(158 53 255);
+    color: deepskyblue;
 }
 @media only screen and (max-width: 720px){
     .mobile-menu{
