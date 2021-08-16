@@ -28,16 +28,13 @@
 
 .tag{
     padding: 4px 8px;
-    background-color: aquamarine;
+    background-color: #2a5c9e;
+    color: white;
     border-radius: 4px;
     margin-right: 6px;
     margin-bottom: 4px;
 }
 
-.darktag{
-    color: white;
-    background-color: #2a5c9e;
-}
 
 .project-links{
     margin-top: 6px;
@@ -46,26 +43,20 @@
 
 .project-links a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .link-button{
     display: flex;
     justify-content:center;
     align-items: center;
-    background-color:aquamarine;
+    background-color: #2a5c9e;
     width: max-content;
     padding: 4px 8px;
     border-radius: 4px;
     font-size: 16px;
     margin-right: 6px;
 }
-
-.dark-link-button{
-    color: white;
-    background-color: #2a5c9e;
-}
-
 
 .link-button i{
     display: flex;

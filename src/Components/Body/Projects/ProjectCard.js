@@ -1,9 +1,7 @@
 import React from 'react'
 import './ProjectCard.css'
-import { useDarkMode } from '../../../Context/DarkMode'
 
 function ProjectCard({ project }) {
-    const darkMode = useDarkMode()
     return (
         <div className='project-card'>
             <div className="project-info">
@@ -11,13 +9,13 @@ function ProjectCard({ project }) {
                 <div className="project-links">
                     {project.demo &&
                         <a target="_blank" rel="noopener noreferrer" href={project.demo} className="project-link">
-                            <div className={darkMode ? "link-button dark-link-button" : "link-button"}>
+                            <div className="link-button">
                                 <i className="fi-rr-globe"></i>Demo
                             </div>
                         </a>}
                     {project.github &&
                         <a target="_blank" rel="noopener noreferrer" href={project.github} className="project-link">
-                            <div className={darkMode ? "link-button dark-link-button" : "link-button"}>
+                            <div className="link-button">
                                 <i className="devicon-github-original"></i>Github
                             </div>
                         </a>}
@@ -26,7 +24,7 @@ function ProjectCard({ project }) {
                 <div className="project-tags">
                     {project.tags.map((tag) => {
                         return (
-                            <label key={tag} className={darkMode ? 'tag darktag' : 'tag'}>{tag}</label>
+                            <label key={tag} className='tag'>{tag}</label>
                         )
                     })}
                 </div>
