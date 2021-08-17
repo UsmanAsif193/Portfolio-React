@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import { useDarkMode } from '../../Context/DarkMode';
 import './ScrollToTop.css';
 
 
 const ScrollToTop = () => {
+    const darkMode = useDarkMode()
 
     const [showScroll, setShowScroll] = useState(false)
 
@@ -22,7 +24,7 @@ const ScrollToTop = () => {
 
     return (
         <div className="scrolltotop-div">
-            <i className={`fi-rr-arrow-small-up ${showScroll ? 'scrollTop' : 'scrollnone'}`} onClick={scrollTop} ></i>
+            <i className={`fi-rr-arrow-small-up ${showScroll ? `${darkMode ? 'scrollTop dark-scrolltop' : 'scrollTop light-scrolltop'}` : 'scrollnone'}`} onClick={scrollTop} ></i>
         </div>
     );
 }

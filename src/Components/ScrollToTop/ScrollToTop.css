@@ -6,9 +6,7 @@
 
 
 .scrollTop {
-    background-color: white;
     border-radius:50%;
-    color: black;
     display: flex;
     position: fixed; 
     width: auto;
@@ -23,7 +21,18 @@
     transition: opacity 0.4s;
     opacity: 0.5;
   }
+
+  .dark-scrolltop{
+     color: black;
+      background-color:white;
+  }
   
+
+.light-scrolltop{
+    color: white;
+    background-color:black
+}
+
 .scroll-none{
     display: none;
 }
