@@ -3,6 +3,7 @@ import './Home.css'
 import Header from '../Header/index'
 import Body from '../Body/index'
 import Footer from '../Footer/index'
+import ScrollToTop from '../ScrollToTop'
 
 function Home() {
     return (
@@ -10,6 +11,7 @@ function Home() {
             <Header />
             <Body />
             <Footer />
+            <ScrollToTop />
         </div>
     )
 }
