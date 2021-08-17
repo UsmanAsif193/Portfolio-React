@@ -21,7 +21,9 @@ const ScrollToTop = () => {
     window.addEventListener('scroll', checkScrollTop)
 
     return (
-        <i class="fi-rr-arrow-small-up scrollTop" onClick={scrollTop} style={{ height: 40, display: showScroll ? 'flex' : 'none' }}></i>
+        <div className="scrolltotop-div">
+            <i className={`fi-rr-arrow-small-up ${showScroll ? 'scrollTop' : 'scrollnone'}`} onClick={scrollTop} ></i>
+        </div>
     );
 }
 

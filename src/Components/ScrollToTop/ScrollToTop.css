@@ -1,9 +1,21 @@
+.scrolltotop-div{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+
 .scrollTop {
+    background-color: white;
+    border-radius:50%;
+    color: black;
+    display: flex;
     position: fixed; 
-    width: 100%;
+    width: auto;
+    font-size: 40px;
     bottom: 20px;
     align-items: center;
-    height: 20px;
+    height: 40px;
     justify-content: center;
     z-index: 1000;
     cursor: pointer;
@@ -12,6 +24,10 @@
     opacity: 0.5;
   }
   
+.scroll-none{
+    display: none;
+}
+
   .scrollTop:hover{
     opacity: 1;
   }
