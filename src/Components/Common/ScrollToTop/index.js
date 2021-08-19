@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useDarkMode } from '../../Context/DarkMode';
+import { useDarkMode } from '../../../Context/DarkMode';
 import './ScrollToTop.css';
 
 
