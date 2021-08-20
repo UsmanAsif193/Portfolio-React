@@ -38,8 +38,12 @@ function Mobile({ isOpen, setIsOpen }) {
                         <i className="fi-rr-user option-icon"></i>Contact
                     </a>
                 </div>
-                <div className='mobile-option' onClick={handleClick}>
-                    {darkMode ? "Light" : "Dark"} Mode
+                <div className='mobile-option light-dark-option-mobile' onClick={handleClick}>
+                    <i className="fi-rr-opacity option-icon"></i>
+                    {darkMode ?
+                        "Light" :
+                        "Dark"
+                    }
                 </div>
             </div>
         </div>

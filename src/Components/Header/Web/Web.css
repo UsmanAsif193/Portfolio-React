@@ -17,6 +17,11 @@
     align-items: center;
 }
 
+.light-dark-option{
+    display: flex;
+    align-items: center;
+}
+
 
 .dark-web-options a{
     color: white;

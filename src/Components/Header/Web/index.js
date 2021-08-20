@@ -33,8 +33,12 @@ function Web() {
                     <i className="fi-rr-user option-icon"></i>Contact
                 </a>
             </div>
-            <div className='web-option' onClick={handleClick} style={{ cursor: 'pointer' }}>
-                {darkMode ? "Light" : "Dark"} Mode
+            <div className='web-option light-dark-option' onClick={handleClick} style={{ cursor: 'pointer' }}>
+                <i className="fi-rr-opacity option-icon"></i>
+                {darkMode ?
+                    "Light" :
+                    "Dark"
+                }
             </div>
         </div>
     )

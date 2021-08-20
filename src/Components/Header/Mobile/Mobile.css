@@ -42,6 +42,10 @@
     display: flex;
 }
 
+.light-dark-option-mobile {
+display: flex;
+}
+
 
 .dark-mob-options a{
     color: white;
