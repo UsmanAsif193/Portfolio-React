@@ -4,7 +4,7 @@ import './Footer.css'
 function Footer() {
     return (
         <div className='footer'>
-            Made by 🔥 by UsmanAsif193
+            &copy;2021 . All rights Reserved
         </div>
     )
 }
