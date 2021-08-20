@@ -1,7 +1,7 @@
 import React from 'react';
 import './About.css';
-import aboutCodingLight from '../../../assets/coding-light.png';
-import aboutCodingDark from '../../../assets/coding-dark.png';
+import aboutCodingLight from '../../../Assets/coding-light.png';
+import aboutCodingDark from '../../../Assets/coding-dark.png';
 import SocailContact from '../../Common/Social-Contact'
 import { useDarkMode } from '../../../Context/DarkMode';
 
