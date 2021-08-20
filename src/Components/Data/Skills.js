@@ -10,7 +10,7 @@ export const SkillsData = [
             {
                 name: "NextJs",
                 icon: <i className="devicon-nextjs-original colored"></i>,
-                darkicon: <i class="devicon-nextjs-original"></i>,
+                darkicon: <i className="devicon-nextjs-original"></i>,
             },
             {
                 name: "JavaScript",
