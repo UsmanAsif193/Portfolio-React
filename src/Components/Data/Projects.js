@@ -6,7 +6,7 @@ export const ProjectData = [
         tags: ['ReactJs', 'NodeJs', 'MERN Stack'],
         demo: 'https://expense-trackerbyusman.surge.sh/',
         github: 'https://github.com/UsmanAsif193/practice-expense-tracker-react',
-        image: require('../../Assets/Project1.png').default
+        image: require('../../assets/Project1.png').default
     },
     {
         id: 2,
@@ -15,7 +15,7 @@ export const ProjectData = [
         tags: ['ReactJS', 'CSS3', 'Full Stack'],
         demo: 'https://usmanasif.surge.sh/',
         github: 'https://github.com/UsmanAsif193/React-Portfolio',
-        image: require('../../Assets/Project2.png').default
+        image: require('../../assets/Project2.png').default
     },
     {
         id: 3,
@@ -24,7 +24,7 @@ export const ProjectData = [
         tags: ['ReactJS', 'CSS3', 'MERN Stack'],
         demo: 'https://tictactoe-usman.surge.sh/',
         github: 'https://github.com/UsmanAsif193/TicTacToe-React',
-        image: require('../../Assets/Project3.png').default
+        image: require('../../assets/Project3.png').default
     },
     {
         id: 4,
@@ -33,6 +33,6 @@ export const ProjectData = [
         tags: ['ReactJs', 'NodeJs', 'MERN Stack'],
         demo: 'https://cryptotracker-usman.surge.sh/',
         github: 'https://github.com/UsmanAsif193/Cryptocurrency-Tracker-React',
-        image: require('../../Assets/Project4.png').default
+        image: require('../../assets/Project4.png').default
     },
 ]

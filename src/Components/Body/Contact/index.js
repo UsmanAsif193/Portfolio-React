@@ -2,7 +2,7 @@ import React from 'react'
 import Seperator from '../../Common/Seperator'
 import './Contact.css'
 import SocailContact from '../../Common/Social-Contact/index'
-import Resume from '../../../Assets/Resume-Usman.pdf'
+import Resume from '../../../assets/Resume-Usman.pdf'
 
 function Contact() {
     return (
