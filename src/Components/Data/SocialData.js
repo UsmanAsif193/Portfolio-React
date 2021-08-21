@@ -1,8 +1,8 @@
 export const SocialData = [
     {
         platform: 'Instagram',
-        link: 'https://www.instagram.com/UsmanAsif193',
-        icon: require('../../assets/icon/instagram.png').default
+        link: 'mailto:Usmanasif193@gmail.com?subject=Hi!',
+        icon: require('../../assets/icon/gmail.png').default
     },
     {
         platform: 'Facebook',
