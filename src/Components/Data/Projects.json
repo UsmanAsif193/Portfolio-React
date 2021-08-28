@@ -10,7 +10,7 @@
         ],
         "demo": "https://expense-trackerbyusman.surge.sh/",
         "github": "https://github.com/UsmanAsif193/practice-expense-tracker-react",
-        "image": "require(\"../../assets/Project1.png\").default"
+        "image": "https://usmanasif961507868.files.wordpress.com/2021/08/project1.png"
     },
     {
         "id": 2,
@@ -23,7 +23,7 @@
         ],
         "demo": "https://usmanasif.surge.sh/",
         "github": "https://github.com/UsmanAsif193/React-Portfolio",
-        "image": "require(\"../../assets/Project2.png\").default"
+        "image": "https://usmanasif961507868.files.wordpress.com/2021/08/project2.png"
     },
     {
         "id": 3,
@@ -36,7 +36,7 @@
         ],
         "demo": "https://tictactoe-usman.surge.sh/",
         "github": "https://github.com/UsmanAsif193/TicTacToe-React",
-        "image": "require(\"../../assets/Project3.png\").default"
+        "image": "https://usmanasif961507868.files.wordpress.com/2021/08/project3.png"
     },
     {
         "id": 4,
@@ -49,6 +49,6 @@
         ],
         "demo": "https://cryptotracker-usman.surge.sh/",
         "github": "https://github.com/UsmanAsif193/Cryptocurrency-Tracker-React",
-        "image": "require(\"../../assets/Project4.png\").default"
+        "image": "https://usmanasif961507868.files.wordpress.com/2021/08/project4.png"
     }
 ]

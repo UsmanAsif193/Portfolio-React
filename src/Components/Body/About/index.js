@@ -1,12 +1,12 @@
 import React from 'react';
 import './About.css';
-import aboutCodingLight from '../../../assets/coding-light.png';
-import aboutCodingDark from '../../../assets/coding-dark.png';
 import SocailContact from '../../Common/Social-Contact'
 import { useDarkMode } from '../../../Context/DarkMode';
 
 function About() {
     const darkMode = useDarkMode()
+    let aboutCodingLight = "https://usmanasif961507868.files.wordpress.com/2021/08/coding-light.png"
+    let aboutCodingDark = "https://usmanasif961507868.files.wordpress.com/2021/08/coding-dark.png"
     return (
         <div className='about'>
             <div className="about-top">

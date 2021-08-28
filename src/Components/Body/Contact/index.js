@@ -2,9 +2,9 @@ import React from 'react'
 import Seperator from '../../Common/Seperator'
 import './Contact.css'
 import SocailContact from '../../Common/Social-Contact/index'
-import Resume from '../../../assets/Resume-Usman.pdf'
 
 function Contact() {
+    let Resume = "https://usmanasif961507868.files.wordpress.com/2021/08/resume-usman.pdf"
     return (
         <div className='contact'>
             <Seperator />
