@@ -1,7 +1,7 @@
 import React from 'react'
 import './Work.css'
 import Seperator from '../../Common/Seperator'
-import { WorkData } from '../../Data/Work'
+import WorkData from '../../Data/Work.json'
 import WorkCard from './WorkCard.js'
 
 

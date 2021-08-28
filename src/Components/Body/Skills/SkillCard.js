@@ -7,9 +7,9 @@ function SkillCard({ skill }) {
     return (
         <div className="skill-card">
             {darkMode ? (
-                <div className="skill-icon">{skill.darkicon}</div>
+                <div className="skill-icon"><i className={skill.darkiconClass}></i></div>
             ) : (
-                <div className="skill-icon">{skill.icon}</div>
+                <div className="skill-icon"><i className={skill.iconClass}></i></div>
             )}
             <label className="skill-name">{skill.name}</label>
         </div>

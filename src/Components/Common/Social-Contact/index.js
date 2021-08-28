@@ -1,6 +1,6 @@
 import React from 'react'
 import './Social-Contact.css'
-import { SocialData } from '../../Data/SocialData'
+import SocialData from '../../Data/SocialData.json'
 
 function SocialContact() {
     const data = SocialData;

@@ -1,7 +1,7 @@
 import React from 'react'
 import './Skills.css'
 import Seperator from '../../Common/Seperator'
-import { SkillsData } from '../../Data/Skills'
+import SkillsData from '../../Data/Skills.json'
 import SkillCard from './SkillCard'
 
 

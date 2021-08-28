@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { ProjectData } from '../../Data/Projects'
+import ProjectData from '../../Data/Projects.json'
 import './Projects.css'
 import ProjectCard from './ProjectCard'
 import Seperator from '../../Common/Seperator'
