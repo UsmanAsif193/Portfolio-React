@@ -1,12 +1,18 @@
-import React from 'react'
+import React,{ useState, useEffect} from 'react'
 import './Work.css'
 import Seperator from '../../Common/Seperator'
-import WorkData from '../../Data/Work.json'
 import WorkCard from './WorkCard.js'
+import axios from 'axios'
 
 
 function Work() {
-    const data = WorkData
+    const [data, setData ] = useState([])
+    useEffect(() => {
+        axios.get('http://localhost:8000/work')
+        .then((response) => {
+            setData(response.data);
+        })
+    },[])
     return (
         <div className='work'>
             <Seperator />

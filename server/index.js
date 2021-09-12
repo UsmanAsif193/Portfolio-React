@@ -1,24 +1,22 @@
-import app from "./server.js"
-import mongodb from "mongodb"
-import dotenv from "dotenv"
+import express from 'express'
+import cors from 'cors'
+import Projects from './api/projects.js'
+import Work from './api/work.js'
+import Skills from './api/skills.js'
+import Social from './api/social.js'
 
-dotenv.config()
-const MongoClient = mongodb.MongoClient
+const app = express();
+app.use(cors());
+
+app.use(express.json());
 
 const port = process.env.PORT || 8000
 
-MongoClient.connect(
-  process.env.REST_API_MONGODB,
-  {
-    wtimeoutMS: 2500
-}
-  )
-  .catch(err => {
-    console.error(err.stack)
-    process.exit(1)
-  })
-  .then(async client => {
-    app.listen(port, () => {
-      console.log(`Server Started on port ${port}`)
-    })
-  })
+app.listen(port, ()=>{
+    console.log(`server listening to port : ${port}`)
+})
+
+app.get('/projects', Projects);
+app.get('/skills', Skills);
+app.get('/work', Work);
+app.get('/social', Social);

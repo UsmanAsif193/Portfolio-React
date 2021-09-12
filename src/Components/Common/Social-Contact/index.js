@@ -1,12 +1,18 @@
-import React from 'react'
+import React, { useState, useEffect }from 'react'
+import axios from 'axios'
 import './Social-Contact.css'
-import SocialData from '../../Data/SocialData.json'
 
 function SocialContact() {
-    const data = SocialData;
+    const [data, setData ] = useState([])
+    useEffect(() => {
+        axios.get('http://localhost:8000/social')
+        .then((response) => {
+            setData(response.data);
+        })
+    },[])
     return (
         <div className='social-contact'>
-            {data.map((item) => {
+            {data && data.map((item) => {
                 return (
                     <a href={item.link} target='blank' key={item.platform}>
                         <div className='social-icon-div'>

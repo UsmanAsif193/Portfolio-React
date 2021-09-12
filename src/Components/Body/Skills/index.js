@@ -1,12 +1,18 @@
-import React from 'react'
+import React, { useState, useEffect }from 'react'
 import './Skills.css'
 import Seperator from '../../Common/Seperator'
-import SkillsData from '../../Data/Skills.json'
 import SkillCard from './SkillCard'
+import axios from 'axios'
 
 
 function Skills() {
-    const data = SkillsData
+    const [data, setData ] = useState([])
+    useEffect(() => {
+        axios.get('http://localhost:8000/skills')
+        .then((response) => {
+            setData(response.data);
+        })
+    },[])
     return (
         <div className='skills'>
             <Seperator />

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import ProjectData from '../../Data/Projects.json'
 import './Projects.css'
 import ProjectCard from './ProjectCard'
 import Seperator from '../../Common/Seperator'
+import axios from 'axios'
 import GradientButton from '../../Common/Gradient-Button'
 
 function Projects() {
@@ -10,8 +10,12 @@ function Projects() {
     const [loadMore, setloadMore] = useState(3)
     const [buttondisable, setbuttondisable] = useState(false)
 
+    
     useEffect(() => {
-        setProjects(ProjectData)
+        axios('http://localhost:8000/projects')
+        .then(res => 
+            setProjects(res.data)
+            )
     }, [])
     const loadMoreProjects = () => {
         setloadMore(projects.length)
