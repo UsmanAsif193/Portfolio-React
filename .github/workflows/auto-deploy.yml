@@ -19,30 +19,29 @@ jobs:
       CI: false
 
     steps:
+      - uses: actions/checkout@v2
       working-directory: ./server
-        # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-        - uses: actions/checkout@v2
-        # Install node version 12
-        - name: Setup Node.js environment
-          run: npm install
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      # Install node version 12
+      - name: Setup Node.js environment
+        run: npm install
 
             # Build react app
-        - name: Build Yarn and npm
-          run: npm run build
+      - name: Build Yarn and npm
+        run: npm run build
 
       working-directory: ../
-        - uses: actions/checkout@v2
-        # Install node version 12
-        - name: Setup Node.js environment
-          run: npm install
+      # Install node version 12
+      - name: Setup Node.js environment
+        run: npm install
 
-              # Build react app
-        - name: Build Yarn and npm
-          run: npm run build
+            # Build react app
+      - name: Build Yarn and npm
+        run: npm run build
 
           # Install Surge 
-        - name: Install Surge
-          run: npm install -g surge
+      - name: Install Surge
+        run: npm install -g surge
             
-        - name: Deploying on Surge
-          run: surge ./build usmanasif.surge.sh --token ${{secrets.SURGE_TOKEN}}
+      - name: Deploying on Surge
+        run: surge ./build usmanasif.surge.sh --token ${{secrets.SURGE_TOKEN}}
