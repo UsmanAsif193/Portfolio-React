@@ -19,7 +19,7 @@ jobs:
       CI: false
 
     steps:
-      working-directory: server
+      working-directory: ./server
         # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
         - uses: actions/checkout@v2
         # Install node version 12
