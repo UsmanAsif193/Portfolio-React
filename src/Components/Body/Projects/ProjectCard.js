@@ -10,7 +10,7 @@ function ProjectCard({ project }) {
                     {project.demo &&
                         <a target="_blank" rel="noopener noreferrer" href={project.demo} className="project-link">
                             <div className="link-button">
-                                <i className="fi-rr-globe"></i>Demo
+                                <i className="fas fa-globe"></i>Demo
                             </div>
                         </a>}
                     {project.github &&

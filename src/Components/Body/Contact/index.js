@@ -15,7 +15,7 @@ function Contact() {
                     <SocailContact />
                 </div>
                 <div className="download">
-                    <a download href={Resume}><i className="fi-rr-cloud-download download-icon"></i>Download Resume</a>
+                    <a download href={Resume}><i className="fas fa-cloud-download-alt download-icon"></i>Download Resume</a>
                 </div>
             </div>
         </div>

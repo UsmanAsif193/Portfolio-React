@@ -3,7 +3,7 @@ import { useDarkMode } from '../../../Context/DarkMode';
 import './ScrollToTop.css';
 
 
-const ScrollToTop = () => {
+const ScrollToTop = ({isOpen}) => {
     const darkMode = useDarkMode()
 
     const [showScroll, setShowScroll] = useState(false)
@@ -24,7 +24,7 @@ const ScrollToTop = () => {
 
     return (
         <div className="scrolltotop-div">
-            <i className={`fi-rr-arrow-small-up ${showScroll ? `${darkMode ? 'scrollTop dark-scrolltop' : 'scrollTop light-scrolltop'}` : 'scrollnone'}`} onClick={scrollTop} ></i>
+            <i className={`fas fa-chevron-circle-up ${showScroll ? `${darkMode ? 'scrollTop dark-scrolltop' : 'scrollTop light-scrolltop'} ${isOpen && 'scroll-none'}` : 'scroll-none'}`} onClick={scrollTop} ></i>
         </div>
     );
 }

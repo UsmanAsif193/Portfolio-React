@@ -15,26 +15,26 @@ function Web() {
         <div className={darkMode ? 'web dark-web-options' : 'web'}>
             <div className='web-option'>
                 <a href="#Projects">
-                    <i className="fi-rr-edit-alt option-icon"></i>Projects
+                    <i className="fas fa-edit option-icon"></i>Projects
                 </a>
             </div>
             <div className='web-option'>
                 <a href="#Skills">
-                    <i className="fi-rr-laptop option-icon"></i>Skills
+                    <i className="fas fa-laptop option-icon"></i>Skills
                 </a>
             </div>
             <div className='web-option'>
                 <a href="#Work">
-                    <i className="fi-rr-briefcase option-icon"></i>Work
+                    <i className="fas fa-briefcase option-icon"></i>Work
                 </a>
             </div>
             <div className='web-option'>
                 <a href="#Contact">
-                    <i className="fi-rr-user option-icon"></i>Contact
+                    <i className="fas fa-user-edit option-icon"></i>Contact
                 </a>
             </div>
             <div className='web-option light-dark-option' onClick={handleClick} style={{ cursor: 'pointer' }}>
-                <i className="fi-rr-opacity option-icon"></i>
+                <i className="fas fa-adjust option-icon"></i>
                 {darkMode ?
                     "Light" :
                     "Dark"

@@ -1,52 +1,65 @@
-.mobile{
-    background-color: white;
-    height: 100vh;
-    width: 60vw;
-    position: absolute;
-    right:-1px;
-    top: -3px;
-    padding: 18px 12px;
-    display: flex;
-    flex-direction: column;
+.mobile {
+  background-color: white;
+  height: 100vh;
+  width: 60vw;
+  position: fixed;
+  right: -1px;
+  top: -3px;
+  padding: 18px 12px;
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
 }
 
-.dark-mobile{
-    background-color: black;
+.dark-mobile {
+  background-color: black;
 }
 
-.close-icon{
-    display: flex;
-    justify-content:flex-end;
-    font-size: 24px;
+.close-icon {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 24px;
 }
 
-.mobile-options{
-    display: flex;
-    flex-direction: column;
-    width:100%;
-    padding-top: 24px;
-    justify-content:center;
-    align-items: center;
-    height: 100%;
+.mobile-options {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 24px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
-.mobile-option{
-    font-size:24px;
-    margin: 12px 0;
-    display: flex;
+.mobile-option {
+  font-size: 24px;
+  margin: 12px 0;
+  display: flex;
 }
 
-.mobile-option a{
-    text-decoration: none;
-    color: black;
-    display: flex;
+.mobile-option a {
+  text-decoration: none;
+  color: black;
+  display: flex;
 }
 
 .light-dark-option-mobile {
-display: flex;
+  display: flex;
 }
 
-
-.dark-mob-options a{
-    color: white;
+.dark-mob-options a {
+  color: white;
+}
+.mobile-menu-overlay {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  cursor: pointer;
 }

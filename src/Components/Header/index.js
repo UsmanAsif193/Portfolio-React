@@ -1,11 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useDarkMode } from '../../Context/DarkMode'
 import './Header.css'
 import Mobile from './Mobile'
 import Web from './Web'
 
-function Header() {
-    const [isOpen, setIsOpen] = useState(false)
+function Header({ isOpen, setIsOpen }) {
     const darkMode = useDarkMode()
     return (
         <div className='header'>
@@ -13,8 +12,8 @@ function Header() {
             <div className="menu">
                 <div className="web-menu"><Web /></div>
                 <div className="mobile-menu">
-                    <div onClick={() => { setIsOpen(!isOpen) }}>
-                        <i className="fi-rr-apps menu-icon"></i>
+                    <div onClick={() => { setIsOpen(true) }}>
+                        <i className="fas fa-bars"></i>
                     </div>
                     {isOpen && <Mobile isOpen={isOpen} setIsOpen={setIsOpen} />}
                 </div>

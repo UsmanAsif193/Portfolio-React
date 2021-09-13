@@ -10,36 +10,38 @@ function Mobile({ isOpen, setIsOpen }) {
 
     function handleClick() {
         setdarkMode(!darkMode)
+        setIsOpen(false)
     }
 
     return (
+        <>
         <div className={darkMode ? 'mobile dark-mobile' : 'mobile'}>
-            <div className="close-icon" onClick={() => { setIsOpen(!isOpen) }}>
-                <i className="fi-rr-cross-circle"></i>
+            <div className="close-icon" onClick={() => { setIsOpen(false) }}>
+                <i className="far fa-times-circle"></i>
             </div>
             <div className={darkMode ? "mobile-options dark-mob-options" : 'mobile-options'}>
-                <div className='mobile-option'>
+                <div className='mobile-option' onClick={() => setIsOpen(false)}>
                     <a href="#Projects">
-                        <i className="fi-rr-edit-alt option-icon"></i>Projects
+                        <i className="fas fa-edit option-icon"></i>Projects
                     </a>
                 </div>
-                <div className='mobile-option'>
+                <div className='mobile-option' onClick={() => setIsOpen(false)}>
                     <a href="#Skills">
-                        <i className="fi-rr-laptop option-icon"></i>Skills
+                        <i className="fas fa-laptop option-icon"></i>Skills
                     </a>
                 </div>
-                <div className='mobile-option'>
+                <div className='mobile-option' onClick={() => setIsOpen(false)}>
                     <a href="#Work">
-                        <i className="fi-rr-briefcase option-icon"></i>Work
+                        <i className="fas fa-briefcase option-icon"></i>Work
                     </a>
                 </div>
-                <div className='mobile-option'>
+                <div className='mobile-option' onClick={() => setIsOpen(false)}>
                     <a href="#Contact">
-                        <i className="fi-rr-user option-icon"></i>Contact
+                        <i className="fas fa-user-edit option-icon"></i>Contact
                     </a>
                 </div>
                 <div className='mobile-option light-dark-option-mobile' onClick={handleClick}>
-                    <i className="fi-rr-opacity option-icon"></i>
+                    <i className="fas fa-adjust option-icon"></i>
                     {darkMode ?
                         "Light" :
                         "Dark"
@@ -47,6 +49,8 @@ function Mobile({ isOpen, setIsOpen }) {
                 </div>
             </div>
         </div>
+        {isOpen && <div className="mobile-menu-overlay" onClick={() => { setIsOpen(false) }}></div>}
+        </>
     )
 }
 
