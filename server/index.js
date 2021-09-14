@@ -19,13 +19,11 @@ app.listen(port, ()=>{
 const url = process.env.MONGO_URI;
 const client = new MongoClient(url);
 
-// Database Name
 const dbName = 'Portfolio';
 const collections = ['Projects', 'Skills', 'Work', 'Social']
 
 async function main() {
     
-  // Use connect method to connect to the server
   await client.connect();
   const db = client.db(dbName);
 collections.map(async(singlecollection) => {
