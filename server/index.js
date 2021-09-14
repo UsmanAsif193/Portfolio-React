@@ -23,17 +23,15 @@ const dbName = 'Portfolio';
 const collections = ['Projects', 'Skills', 'Work', 'Social']
 
 async function main() {
-    
-  await client.connect();
-  const db = client.db(dbName);
-collections.map(async(singlecollection) => {
-    const collection = db.collection(singlecollection);
-    const findResult = await collection.find({}).toArray();
-    app.use(`/${singlecollection}`, (req,res) => {
-      res.send(findResult)
-      })
-})
-
+    await client.connect();
+    const db = client.db(dbName);
+    collections.map(async(singlecollection) => {
+        const collection = db.collection(singlecollection);
+        const findResult = await collection.find({}).toArray();
+        app.use(`/${singlecollection}`, (req,res) => {
+        res.send(findResult)
+        })
+    })
 }
 
 main()
