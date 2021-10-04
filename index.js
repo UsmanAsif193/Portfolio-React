@@ -1,7 +1,7 @@
-import express from 'express'
-import { MongoClient } from 'mongodb'
-import dotenv from 'dotenv'
-import cors from 'cors'
+var express = require('express')
+var dotenv = require('dotenv')
+var cors = require('cors')
+var {MongoClient} = require('mongodb')
 
 const app = express();
 app.use(cors());
