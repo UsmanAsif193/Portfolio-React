@@ -13,7 +13,7 @@ app.use(express.json());
 const port = process.env.PORT || 8000
 
 app.listen(port, ()=>{
-    console.log(`server listening to port : ${port}`)
+    console.log(`Server listening to port : ${port}`)
 })
 
 const url = process.env.MONGO_URI;
