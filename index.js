@@ -16,7 +16,7 @@ app.listen(port, ()=>{
     console.log(`Server listening to port : ${port}`)
 })
 
-const url = process.env.MONGO_URI;
+const url = 'mongodb+srv://User:1234@all-projects.6ehhc.mongodb.net/Portfolio?retryWrites=true&w=majority';
 const client = new MongoClient(url);
 
 const dbName = 'Portfolio';
