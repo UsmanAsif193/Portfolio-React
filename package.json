@@ -1,33 +1,35 @@
 {
-  "name": "server",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "client-install": "npm install --prefix client",
-    "start": "node server.js",
-    "server": "nodemon server.js",
-    "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "netlify-postbuild" : "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
-    "deploy-netlify": "concurrently \"npm run server\" \"npm run netlify-postbuild\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
-  },
-  "buildpacks": [
-    {
-      "url": "mars/create-react-app"
-    }
-  ],
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "name": "new-portfolio",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "concurrently": "^6.3.0",
-    "cors": "^2.8.5",
-    "dotenv": "^10.0.0",
-    "express": "^4.17.1",
-    "mongodb": "^4.1.2",
-    "nodemon": "^2.0.12",
-    "path": "^0.12.7"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-loader-spinner": "^4.0.0",
+    "react-scripts": "4.0.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
