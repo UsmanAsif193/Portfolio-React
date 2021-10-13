@@ -2,6 +2,7 @@ var express = require('express')
 var dotenv = require('dotenv')
 var cors = require('cors')
 var {MongoClient} = require('mongodb')
+var path = require('path')
 
 const app = express();
 app.use(cors());
@@ -11,6 +12,8 @@ dotenv.config()
 app.use(express.json());
 
 const port = process.env.PORT || 8000
+app.use(express.static(
+  path.join(__dirname, './client/build')));
 
 app.listen(port, ()=>{
     console.log(`Server listening to port : ${port}`)
