@@ -8,7 +8,7 @@ function Header() {
     const [isOpen, setIsOpen] = useState(false)
     const darkMode = useDarkMode()
     return (
-        <div className='header'>
+        <div className={darkMode ? "header header-dark" : "header"}>
             <div className={darkMode ? "logo dark-logo" : "logo"}>Usman Asif</div>
             <div className="menu">
                 <div className="web-menu"><Web /></div>
