@@ -23,9 +23,9 @@
                 "darkiconClass": "devicon-typescript-plain colored"
             },
             {
-                "name": "HTML5",
-                "iconClass": "devicon-html5-plain colored",
-                "darkiconClass": "devicon-html5-plain colored"
+                "name": "SAAS",
+                "iconClass": "devicon-sass-original colored",
+                "darkiconClass": "devicon-sass-original"
             }
         ]
     },
@@ -41,6 +41,36 @@
                 "name": "GraphQl",
                 "iconClass": "devicon-graphql-plain colored",
                 "darkiconClass": "devicon-graphql-plain "
+            },
+            {
+                "name": "ExpressJs",
+                "iconClass": "devicon-express-original-wordmark colored",
+                "darkiconClass": "devicon-express-original-wordmark "
+            }
+        ]
+    },
+    {
+        "type": "DataBase",
+        "list": [
+            {
+                "name": "MongoDB",
+                "iconClass": "devicon-mongodb-plain colored",
+                "darkiconClass": "devicon-mongodb-plain colored"
+            }
+        ]
+    },
+    {
+        "type": "Others",
+        "list": [
+            {
+                "name": "Github",
+                "iconClass": "devicon-github-original colored",
+                "darkiconClass": "devicon-github-original"
+            },
+            {
+                "name": "Heroku",
+                "iconClass": "devicon-heroku-plain colored",
+                "darkiconClass": "devicon-heroku-plain colored"
             }
         ]
     }
