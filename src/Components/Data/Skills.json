@@ -25,7 +25,7 @@
             {
                 "name": "SAAS",
                 "iconClass": "devicon-sass-original colored",
-                "darkiconClass": "devicon-sass-original"
+                "darkiconClass": "devicon-sass-original colored"
             }
         ]
     },
@@ -40,7 +40,7 @@
             {
                 "name": "GraphQl",
                 "iconClass": "devicon-graphql-plain colored",
-                "darkiconClass": "devicon-graphql-plain "
+                "darkiconClass": "devicon-graphql-plain colored"
             },
             {
                 "name": "ExpressJs",
