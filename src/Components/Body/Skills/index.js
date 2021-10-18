@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 import './Skills.css'
-import Seperator from '../../Common/Seperator'
 import SkillsData from '../../Data/Skills.json'
 import SkillCard from './SkillCard'
 import GradientButton from '../../Common/Gradient-Button'
@@ -17,7 +16,6 @@ function Skills() {
 
     return (
         <div className='skills'>
-            <Seperator />
             <label className="section-title">Skills</label>
             <div className="skills-container">
                 {data.slice(0, loadMore).map((item) => {

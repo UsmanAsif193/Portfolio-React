@@ -5,6 +5,7 @@ import Projects from './Projects/index'
 import Skills from './Skills/index'
 import Work from './Work/index'
 import Contact from './Contact/index'
+import Seperator from '../Common/Seperator'
 
 function Body() {
     return (
@@ -12,15 +13,20 @@ function Body() {
             <section id='About'>
                 <About />
             </section>
+            <Seperator />
             <section id='Projects'>
                 <Projects />
             </section>
+            <Seperator />
             <section id='Skills'>
                 <Skills />
             </section>
+            <Seperator />
             <section id='Work'>
                 <Work />
-            </section><section id='Contact'>
+            </section>
+            <Seperator />
+            <section id='Contact'>
                 <Contact />
             </section>
         </div>

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import ProjectData from '../../Data/Projects.json'
 import './Projects.css'
 import ProjectCard from './ProjectCard'
-import Seperator from '../../Common/Seperator'
 import GradientButton from '../../Common/Gradient-Button'
 
 function Projects() {
@@ -20,7 +19,6 @@ function Projects() {
 
     return (
         <div className='projects'>
-            <Seperator />
             <label className='section-title'>Projects</label>
             {projects.slice(0, loadMore).map((project) => {
                 return (
