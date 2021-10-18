@@ -71,6 +71,20 @@
                 "name": "Heroku",
                 "iconClass": "devicon-heroku-plain colored",
                 "darkiconClass": "devicon-heroku-plain colored"
+            },
+            {
+                "name": "Netlify",
+                "iconClass": "iconify" ,
+                "darkiconClass": "iconify",
+                "dataIcon" : "logos:netlify",
+                "dataIconDark" : "logos:netlify" 
+            },
+            {
+                "name": "Surge",
+                "iconClass": "iconify" ,
+                "darkiconClass": "iconify",
+                "dataIcon" : "logos:surge",
+                "dataIconDark" : "logos:surge" 
             }
         ]
     }
