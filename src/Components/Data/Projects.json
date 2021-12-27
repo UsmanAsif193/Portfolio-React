@@ -43,5 +43,14 @@
     "demo": "https://chatapp-usman.netlify.app/",
     "github": "https://github.com/UsmanAsif193/Microsoft-Teams-Clone",
     "image": "https://usmanasif961507868.files.wordpress.com/2021/11/chat-app-sample.png"
+  },
+  {
+    "id": 6,
+    "title": "Business Website",
+    "about": "It is a simple Business website made on NextJs and ThemeUI. It contains different sections and each section contains different parts. It covers the business pricing, experience, team-section and many more.",
+    "tags": ["NextJs", "ThemeUI", "MERN Stack"],
+    "demo": "https://business-website-5b708r02y-usmanasif193.vercel.app/",
+    "github": "https://github.com/UsmanAsif193/Business-Website",
+    "image": "https://usmanasif961507868.files.wordpress.com/2021/12/project6.png"
   }
 ]
