@@ -24,7 +24,13 @@ function MyApp({ Component, pageProps }) {
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css"
         />
-        <link rel="shortcut icon" href="/favicon.png" />
+        <link
+          rel="stylesheet"
+          href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+          crossOrigin="anonymous"
+        />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
         <title>Portfolio Website</title>
       </Head>
       <Component {...pageProps} />
