@@ -6,7 +6,7 @@ import axios from "axios";
 function Work() {
   const [data, setData] = useState([]);
   useEffect(() => {
-    axios.get("http://localhost:3000/api/work").then((response) => {
+    axios.get("api/work").then((response) => {
       setData(response.data);
     });
   }, []);

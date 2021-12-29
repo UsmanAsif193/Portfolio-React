@@ -6,7 +6,7 @@ import axios from "axios";
 function Skills() {
   const [data, setData] = useState([]);
   useEffect(() => {
-    axios.get("http://localhost:3000/api/skills").then((response) => {
+    axios.get("api/skills").then((response) => {
       setData(response.data);
     });
   }, []);

@@ -10,9 +10,7 @@ function Projects() {
   const [buttondisable, setbuttondisable] = useState(false);
 
   useEffect(() => {
-    axios("http://localhost:3000/api/projects").then((res) =>
-      setProjects(res.data)
-    );
+    axios("api/projects").then((res) => setProjects(res.data));
   }, []);
   const loadMoreProjects = () => {
     setloadMore(projects.length);

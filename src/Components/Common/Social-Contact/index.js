@@ -4,7 +4,7 @@ import axios from "axios";
 function SocialContact() {
   const [data, setData] = useState([]);
   useEffect(() => {
-    axios.get("http://localhost:3000/api/social").then((response) => {
+    axios.get("api/social").then((response) => {
       setData(response.data);
     });
   }, []);
