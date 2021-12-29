@@ -1,4 +1,4 @@
-import React, { useState, useContext, createContext } from "react";
+import React, { useState, useContext, createContext, useEffect } from "react";
 
 const DarkModeContext = createContext();
 
@@ -13,13 +13,17 @@ export const useSetDarkMode = () => {
 };
 
 const DarkMode = ({ children }) => {
-  const [darkMode, setdarkMode] = useState(
-    typeof window !== "undefined" &&
-      window.matchMedia &&
+  const [darkMode, setdarkMode] = useState();
+  useEffect(() => {
+    if (
+      typeof window !== "undefined" &&
       window.matchMedia("(prefers-color-scheme: dark)").matches
-      ? true
-      : false
-  );
+    ) {
+      setdarkMode(true);
+    } else {
+      setdarkMode(false);
+    }
+  }, []);
   return (
     <DarkModeContext.Provider value={darkMode}>
       <SetDarkModeContext.Provider value={setdarkMode}>

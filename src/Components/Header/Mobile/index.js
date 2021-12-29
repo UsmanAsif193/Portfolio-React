@@ -10,47 +10,51 @@ function Mobile({ isOpen, setIsOpen }) {
     setIsOpen(false);
   }
 
+  function handleClose() {
+    setIsOpen(false);
+  }
+
   return (
     <>
       <div className={darkMode ? "mobile dark-mobile" : "mobile"}>
         <div
           className="close-icon"
           onClick={() => {
-            setIsOpen(false);
+            setIsOpen(!isOpen);
           }}
         >
-          <i className="far fa-times-circle"></i>
+          <i className="fi-rr-cross-circle"></i>
         </div>
         <div
           className={
             darkMode ? "mobile-options dark-mob-options" : "mobile-options"
           }
         >
-          <div className="mobile-option" onClick={() => setIsOpen(false)}>
+          <div className="mobile-option" onClick={handleClose}>
             <a href="#Projects">
-              <i className="fas fa-edit option-icon"></i>Projects
+              <i className="fi-rr-edit-alt option-icon"></i>Projects
             </a>
           </div>
-          <div className="mobile-option" onClick={() => setIsOpen(false)}>
+          <div className="mobile-option" onClick={handleClose}>
             <a href="#Skills">
-              <i className="fas fa-laptop option-icon"></i>Skills
+              <i className="fi-rr-laptop option-icon"></i>Skills
             </a>
           </div>
-          <div className="mobile-option" onClick={() => setIsOpen(false)}>
+          <div className="mobile-option" onClick={handleClose}>
             <a href="#Work">
-              <i className="fas fa-briefcase option-icon"></i>Work
+              <i className="fi-rr-briefcase option-icon"></i>Work
             </a>
           </div>
-          <div className="mobile-option" onClick={() => setIsOpen(false)}>
+          <div className="mobile-option" onClick={handleClose}>
             <a href="#Contact">
-              <i className="fas fa-user-edit option-icon"></i>Contact
+              <i className="fi-rr-user option-icon"></i>Contact
             </a>
           </div>
           <div
             className="mobile-option light-dark-option-mobile"
             onClick={handleClick}
           >
-            <i className="fas fa-adjust option-icon"></i>
+            <i className="fi-rr-opacity option-icon"></i>
             {darkMode ? "Light" : "Dark"}
           </div>
         </div>
