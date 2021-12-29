@@ -1,0 +1,21 @@
+
+
+/* Css */
+@import url("./Components/Home.css");
+
+body{
+  font-family: 'Work Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.app-container.light{
+  color: black;
+  background-color: white;
+}
+
+.app-container.dark{
+  color: white;
+  background-color: black;
+}
+

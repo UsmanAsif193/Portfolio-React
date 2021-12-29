@@ -1,0 +1,14 @@
+
+@import url("./About.css");
+@import url("./Contact.css");
+@import url("./ProjectCard.css");
+@import url("./Projects.css");
+@import url("./SkillCard.css");
+@import url("./Skills.css");
+@import url("./Work.css");
+@import url("./WorkCard.css");
+
+.body{
+    padding: 12px;
+    padding-bottom: 36px;
+}

@@ -1,0 +1,31 @@
+
+@import url("./Header/Header.css");
+@import url("./Body/Body.css");
+@import url("./Common/Common.css");
+@import url("./Footer/Footer.css");
+
+html{
+    scroll-behavior: smooth;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+}
+
+.section-title{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 1024px) {
+.home{
+    width: 90%;
+}
+}
+@media only screen and (max-width: 512px) {
+    .home{
+        width: 100%;
+    }
+}
